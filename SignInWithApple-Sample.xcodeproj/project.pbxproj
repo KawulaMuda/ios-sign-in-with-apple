@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D13F28A2533EB82007BA788 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13F2892533EB82007BA788 /* KeychainItem.swift */; };
 		3DBCA4302533657A0047E525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCA42F2533657A0047E525 /* AppDelegate.swift */; };
 		3DBCA4322533657A0047E525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCA4312533657A0047E525 /* SceneDelegate.swift */; };
 		3DBCA4342533657A0047E525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCA4332533657A0047E525 /* ViewController.swift */; };
 		3DBCA4372533657A0047E525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCA4352533657A0047E525 /* Main.storyboard */; };
 		3DBCA4392533657A0047E525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCA4382533657A0047E525 /* Assets.xcassets */; };
 		3DBCA43C2533657A0047E525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCA43A2533657A0047E525 /* LaunchScreen.storyboard */; };
+		3DBCA44525336B3F0047E525 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCA44425336B3F0047E525 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D13F2892533EB82007BA788 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		3D13F28D2533F859007BA788 /* SignInWithApple-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SignInWithApple-Sample.entitlements"; sourceTree = "<group>"; };
 		3DBCA42C2533657A0047E525 /* SignInWithApple-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SignInWithApple-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBCA42F2533657A0047E525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DBCA4312533657A0047E525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		3DBCA4382533657A0047E525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBCA43B2533657A0047E525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBCA43D2533657A0047E525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBCA44425336B3F0047E525 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +61,12 @@
 		3DBCA42E2533657A0047E525 /* SignInWithApple-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				3D13F28D2533F859007BA788 /* SignInWithApple-Sample.entitlements */,
 				3DBCA42F2533657A0047E525 /* AppDelegate.swift */,
 				3DBCA4312533657A0047E525 /* SceneDelegate.swift */,
+				3D13F2892533EB82007BA788 /* KeychainItem.swift */,
 				3DBCA4332533657A0047E525 /* ViewController.swift */,
+				3DBCA44425336B3F0047E525 /* ResultViewController.swift */,
 				3DBCA4352533657A0047E525 /* Main.storyboard */,
 				3DBCA4382533657A0047E525 /* Assets.xcassets */,
 				3DBCA43A2533657A0047E525 /* LaunchScreen.storyboard */,
@@ -139,7 +147,9 @@
 			files = (
 				3DBCA4342533657A0047E525 /* ViewController.swift in Sources */,
 				3DBCA4302533657A0047E525 /* AppDelegate.swift in Sources */,
+				3D13F28A2533EB82007BA788 /* KeychainItem.swift in Sources */,
 				3DBCA4322533657A0047E525 /* SceneDelegate.swift in Sources */,
+				3DBCA44525336B3F0047E525 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +296,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SignInWithApple-Sample/SignInWithApple-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPH4FFR3Z3;
 				INFOPLIST_FILE = "SignInWithApple-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,9 +317,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SignInWithApple-Sample/SignInWithApple-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPH4FFR3Z3;
 				INFOPLIST_FILE = "SignInWithApple-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
